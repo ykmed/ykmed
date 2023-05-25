@@ -1,0 +1,22 @@
+.flex-container {
+    display: flex;
+    gap: 32px;
+}
+
+.flex-item {
+    width: 200px;
+    height: 200px;
+    background: red;
+}
+
+@media screen and (max-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+        background: green
+    }
+
+    .flex-item {
+        width: 100%;
+        background: blue
+    }
+}
